@@ -1,20 +1,41 @@
-import { useState } from 'react';
-import Header from './Header';
-import Hamburger from '../assets/🦆 icon _hamburger menu.svg';
-import Close from '../assets/home icon.svg';
+import * as React from "react";
+import { Link } from "react-router-dom";
 
-function Navbar() {
-    const [navbarOpen, setNavbarOpen] = useState(false);
-    function handleToggle() {
-        setNavbarOpen(!navbarOpen)
-    }
-
-    return (
-        <nav>
-            <button className="burger-icon" onClick={handleToggle}>
-                <img src={navbarOpen ? Close : Hamburger} alt="Navigation Bar" />
-            </button>
-        </nav>
-    );
+function Nav() {
+  return (
+      <ul>
+        <li>
+          <Link to="/" className="a">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="a">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="a">
+            Menu
+          </Link>
+        </li>
+        <li>
+          <Link to="/reservations" className="a">
+            Reservations
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="a">
+            Order Online
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="a">
+            Login
+          </Link>
+        </li>
+      </ul>
+  );
 }
-export default Navbar;
+
+export default Nav;

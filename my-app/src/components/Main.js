@@ -1,10 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import restaurantfood from "../assets/restaurantfood.jpg";
 
-const HeroSection= () => {
+const Main = () => {
     return (
-        <header className="App-header"><a href="/book" role="button">Reserve a table</a>
-        </header>
-    );
-  }
+        <div className="main">
+            <div>
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>
+                    We are a family owned Mediterranean restaurant, focused on
+                    traditional recipes served with a modern twist.
+                </p>
 
-  export default HeroSection;
+                <Link to="/reservations">
+                    <button id="button" to="/reservations">
+                        Reserve a Table
+                    </button>
+                </Link>
+            </div>
+
+            <div>
+                <img src={restaurantfood} alt="restaurant food" />
+            </div>
+        </div>
+    );
+}
+
+export default Main;
