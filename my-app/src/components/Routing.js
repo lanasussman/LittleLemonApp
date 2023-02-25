@@ -19,7 +19,6 @@ export default function Routing() {
 
       <Route path="/order" element={<Order />} />
       <Route path="/login" element={<Login />} />
-
       <Route path="/confirmation" element={<Confirmation />} />
     </Routes>
   );

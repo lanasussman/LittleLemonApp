@@ -143,7 +143,6 @@ export default function ReservationForm(props) {
           <option>Outdoor (Sidewalk)</option>
         </select>
       </div>
-
       <div>
         <label htmlFor="comments">Additional Comments</label> <br></br>
         <textarea

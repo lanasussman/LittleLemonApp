@@ -7,7 +7,6 @@ export default function Navbar() {
   function handleToggle() {
     setNavbarOpen(!navbarOpen);
   }
-
   return (
     <nav>
       <nav className="burger">
